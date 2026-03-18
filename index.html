@@ -1,19 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <title>exercice_1</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Prénom Nom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            margin-bottom: 5px;
+        }
+        .header {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .contact {
+            font-size: 0.9em;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-left: 4px solid #333;
+            padding-left: 8px;
+            margin-bottom: 10px;
+        }
+        .item {
+            margin-bottom: 10px;
+        }
+        .item-title {
+            font-weight: bold;
+        }
+        .item-subtitle {
+            font-style: italic;
+            color: #555;
+        }
+        .date {
+            float: right;
+            font-size: 0.9em;
+            color: #777;
+        }
+        ul {
+            margin: 5px 0 0 20px;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
 <body>
-<FIELDSET>
-<form>
-Nom d'utilisateur : <input type="text" value="" name="nom" /><br>
-<br>
-Mot de passe : <input type="password" value="" name="nom" /><br>
-<br>
-<input type="submit" value="Valider" name="benvoyer" />
-<input type="reset" value="Réinitialiser" name="breset" />
-</form>
-</fieldset>
-  </body>
+<div class="cv-container">
+    <header class="header">
+        <h1>Prénom NOM</h1>
+        <div class="contact">
+            Adresse complète<br>
+            Téléphone : 06 00 00 00 00<br>
+            Email : prenom.nom@email.com<br>
+            GitHub / LinkedIn : lien
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>Profil</h2>
+        <p>
+            Court paragraphe de 3–4 lignes présentant ton profil, ton domaine (ex : développement web, gestion de projet),
+            tes forces principales et ce que tu recherches.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Compétences</h2>
+        <div class="item">
+            <span class="item-title">Techniques :</span>
+            HTML, CSS, JavaScript, PHP, SQL, Git, Linux, etc.
+        </div>
+        <div class="item">
+            <span class="item-title">Outils :</span>
+            VS Code, GitHub, Docker, etc.
+        </div>
+        <div class="item">
+            <span class="item-title">Transversales :</span>
+            Travail en équipe, organisation, communication, autonomie.
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Expériences professionnelles</h2>
+
+        <div class="item">
+            <div>
+                <span class="item-title">Intitulé du poste</span> – <span class="item-subtitle">Nom de l’entreprise, Ville</span>
+                <span class="date">2023 – 2024</span>
+            </div>
+            <div class="clear"></div>
+            <ul>
+                <li>Responsabilité / tâche principale 1.</li>
+                <li>Responsabilité / tâche principale 2.</li>
+                <li>Technologies utilisées : HTML, CSS, PHP, MySQL…</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <div>
+                <span class="item-title">Stage / Projet</span> – <span class="item-subtitle">Organisation, Ville</span>
+                <span class="date">2022</span>
+            </div>
+            <div class="clear"></div>
+            <ul>
+                <li>Description du projet ou des missions.</li>
+                <li>Résultats ou réalisations concrètes.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Formation</h2>
+
+        <div class="item">
+            <div>
+                <span class="item-title">Nom du diplôme</span> – <span class="item-subtitle">Établissement, Ville</span>
+                <span class="date">2021 – 2023</span>
+            </div>
+            <div class="clear"></div>
+            <ul>
+                <li>Spécialité / options.</li>
+                <li>Projet marquant ou mémoire.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Projets</h2>
+        <div class="item">
+            <span class="item-title">Nom du projet</span> – <span class="item-subtitle">Projet personnel / scolaire</span>
+            <ul>
+                <li>Brève description du projet.</li>
+                <li>Technologies utilisées.</li>
+                <li>Résultat (lien GitHub, démo, etc.).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Langues</h2>
+        <div class="item">
+            Français : courant<br>
+            Anglais : intermédiaire / courant<br>
+            Autre langue : niveau
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Centres d’intérêt</h2>
+        <p>
+            Sport, informatique, veille technologique, jeux vidéo, lecture, etc.
+        </p>
+    </section>
+</div>
+</body>
 </html>
